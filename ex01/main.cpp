@@ -14,9 +14,9 @@ int main(void)
 	std::cout << std::endl;
 	std::cout << std::endl;
 
-	i->makeSound();
+	i->makeSound();// gato
 	std::cout << std::endl;
-	j->makeSound();
+	j->makeSound();//perro
 
 	std::cout << std::endl;
 	std::cout << std::endl;
