@@ -1,9 +1,9 @@
 NAME = Animals
 CFLAG = -Wall -Werror -Wextra -g -std=c++98 -fsanitize=address
-SRC = main.cpp ClapTrap.cpp 
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongCat.cpp WrongAnimal.cpp
 CC = c++
 OBJS = $(SRC:.cpp=.o)
-HEADER = ClapTrap.hpp
+HEADER = Animal.hpp Cat.hpp Dog.hpp  WrongAnimal.hpp WrongCat.hpp
 
 %.o: %.cpp
 	$(CC) -I. $(CFLAG) -c $< -o $@

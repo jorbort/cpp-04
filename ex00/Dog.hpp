@@ -3,17 +3,17 @@
 
 # include <iostream>
 # include <string>
+#include "Animal.hpp"
 
-class Dog
+class Dog : public Animal
 {
 
 	public:
 		Dog();
 		Dog(Dog const & src );
 		Dog &operator=( Dog const & rhs );
-		
-		~Dog();
-
+		virtual ~Dog();
+		virtual void makeSound(void) const;
 }; 
 
 #endif 

@@ -8,14 +8,12 @@
 
 class Cat : public Animal
 {
-	private:
 	public:
 		Cat();
 		Cat( Cat const & src );
-		Cat &		operator=( Cat const & rhs );
-		~Cat();
-		void makeSound(void);
-
+		Cat &operator=( Cat const & rhs );
+		virtual ~Cat();
+		virtual void makeSound(void) const;
 };
 
 #endif
