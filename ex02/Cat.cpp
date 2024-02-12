@@ -10,7 +10,8 @@ Cat::Cat()
 
 Cat::Cat( const Cat & src )
 {
-	*this = src;
+	this->brain = new Brain(*src.brain);
+	this->type = src.type;
 	std::cout << "cat copy constructor has been used" << std::endl; 
 }
 
