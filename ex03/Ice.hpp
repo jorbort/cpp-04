@@ -3,19 +3,17 @@
 
 # include <iostream>
 # include <string>
-
-class Ice
+# include "AMateria.hpp"
+class Ice : public AMateria
 {
-
 	public:
 
 		Ice();
 		Ice( Ice const & src );
 		~Ice();
 
-		Ice &		operator=( Ice const & rhs );
+		Ice &operator=( Ice const & rhs );
 
-	private:
 
 };
 

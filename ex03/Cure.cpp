@@ -12,7 +12,7 @@ Cure::~Cure()
 {
 }
 
-Cure &				Cure::operator=( Cure const & rhs )
+Cure &Cure::operator=( Cure const & rhs )
 {
 	
 	return *this;

@@ -14,7 +14,7 @@ Ice::~Ice()
 }
 
 
-Ice &				Ice::operator=( Ice const & rhs )
+Ice &Ice::operator=( Ice const & rhs )
 {
 	return *this;
 }

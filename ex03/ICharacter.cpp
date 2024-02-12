@@ -12,7 +12,7 @@ ICharacter::~ICharacter()
 {
 }
 
-ICharacter &				ICharacter::operator=( ICharacter const & rhs )
+ICharacter &ICharacter::operator=( ICharacter const & rhs )
 {
 
 	return *this;

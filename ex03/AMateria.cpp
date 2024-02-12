@@ -13,7 +13,7 @@ AMateria::~AMateria()
 {
 }
 
-AMateria &				AMateria::operator=( AMateria const & rhs )
+AMateria &AMateria::operator=( AMateria const & rhs )
 {
 	
 	return *this;
