@@ -13,11 +13,10 @@ class AMateria
 		AMateria();
 		AMateria(std::string const &type);
 		AMateria( AMateria const & src );
-		~AMateria();
-		AMateria &operator=( AMateria const & rhs );
+		virtual ~AMateria();
 
 		std::string const &getType() const;
-		virtual AMateria *clone() = 0;
+		virtual AMateria *clone() const = 0;
 		virtual void use(ICharacter &target);
 };
 
