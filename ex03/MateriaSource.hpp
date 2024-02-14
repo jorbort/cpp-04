@@ -3,19 +3,21 @@
 
 # include <iostream>
 # include <string>
-
+#include "AMateria.hpp"
 class MateriaSource
 {
-
+	private:
+	AMateria *materias[4]; 
 	public:
 
 		MateriaSource();
-		MateriaSource( MateriaSource const & src );
 		~MateriaSource();
+		MateriaSource( MateriaSource const & src );
+		MateriaSource &operator=( MateriaSource const & rhs );
 
-		MateriaSource &		operator=( MateriaSource const & rhs );
-
-	private:
+		AMateria *getMateria(std::string const &type);
+		AMateria *createMateria(std::string const &type);
+		void learnMateria(AMateria *);
 
 };
 
