@@ -17,7 +17,7 @@ class MateriaSource
 
 		AMateria *getMateria(std::string const &type);
 		AMateria *createMateria(std::string const &type);
-		void learnMateria(AMateria *);
+		void learnMateria(AMateria *materia);
 
 };
 
